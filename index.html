@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
+    <script>
+        // ======= 密碼鎖設定開始 =======
+        var password = "boss168"; 
+        var input = prompt("請輸入會長專屬密碼以使用此計算機：", "");
+        if (input !== password) {
+            alert("密碼錯誤，無法進入！");
+            window.location.href = "about:blank"; // 密碼錯誤就變空白頁
+        }
+        // ======= 密碼鎖設定結束 =======
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>靈魂衝擊尋路計算機 - 會長專屬版</title>
